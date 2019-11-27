@@ -27,32 +27,32 @@
   <script src="//unpkg.com/@textback/notification-widget@latest/build/index.js"></script>
   <tb-notification-widget  widget-id="e4fade19-f7e7-93ad-122f-016e84030eaf">
   </tb-notification-widget>
-    <script type="text/javascript">
-    setTimeout(() => {
-    const widgetButtons = document.querySelector('body > tb-notification-widget > tb-notification-widget-inner .tb-widget-buttons');
-    widgetButtons.classList.remove('tb-btn-style-square');
-    widgetButtons.classList.add('tb-btn-style-rounded');
-    widgetButtons.style = 'display: grid; justify-content: center; align-content: center;'
-    let notificationButtons = widgetButtons.querySelectorAll('tb-notification-button');
-    notificationButtons = notificationButtons.forEach(el => {
-    const config = JSON.parse(el.getAttribute('config'));
-    const markUpStyle = Object.assign(config, {'markUp': {
-    'style': 'rounded',
-    'displayMode': 'vertical',
-    'align': 'center',
-    'offset': {
-    'left': 0,
-    'top': 0
-    },
-    'margin': 10
-    }
-    });
-    el.setAttribute('config', JSON.stringify(markUpStyle));
-    el.setAttribute('style', "display: grid; align-items: center; width: 190px; height: 45px");
-    el.querySelector('tb-notification-button__icon').setAttribute('style', "width: 30px; height: 30px; top: 6px");
-    el.querySelector('tb-notification-button__text').setAttribute('style', "width: 90px; line-height: 20px;");
-    });
-    }, 30000);
-    </script>
+  <script type="text/javascript">
+        setTimeout(() => {
+          const widgetButtons = document.querySelector('body > tb-notification-widget > tb-notification-widget-inner .tb-widget-buttons');
+          widgetButtons.classList.remove('tb-btn-style-square');
+          widgetButtons.classList.add('tb-btn-style-rounded');
+          widgetButtons.style = 'display: grid; justify-content: center; align-content: center;'
+          let notificationButtons = widgetButtons.querySelectorAll('tb-notification-button');
+          notificationButtons = notificationButtons.forEach(el => {
+             const config = JSON.parse(el.getAttribute('config'));
+             const markUpStyle = Object.assign(config, {'markUp': {
+              'style': 'rounded',
+              'displayMode': 'vertical',
+              'align': 'center',
+              'offset': {
+                'left': 0,
+                'top': 0
+              },
+              'margin': 10
+            }
+            });
+             el.setAttribute('config', JSON.stringify(markUpStyle));
+             el.setAttribute('style', "display: grid; align-items: center; width: 190px; height: 45px");
+             el.querySelector('tb-notification-button__icon').setAttribute('style', "width: 30px; height: 30px; top: 6px");
+             el.querySelector('tb-notification-button__text').setAttribute('style', "width: 90px; line-height: 20px;");
+           });
+        }, 30000);
+        </script>
 </body>
 </html>
