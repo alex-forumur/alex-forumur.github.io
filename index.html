@@ -9,12 +9,11 @@
   })(window,document,'script','dataLayer','GTM-N24VGWM');</script>
   <!-- End Google Tag Manager -->
   <script type="text/javascript" encoding="utf-8">
-var _tbEmbedArgs = _tbEmbedArgs || [];
-(function () {
+  var _tbEmbedArgs = _tbEmbedArgs || [];
+  (function () {
   var u =  "https://widget.textback.io/widget";
   _tbEmbedArgs.push(["widgetId", "c2f90c10-98c1-4e69-b3ce-cd4a497d73bd"]);
   _tbEmbedArgs.push(["baseUrl", u]);
-
   var d = document, g = d.createElement("script"), s = d.getElementsByTagName("script")[0];
   g.type = "text/javascript";
   g.charset = "utf-8";
@@ -22,9 +21,8 @@ var _tbEmbedArgs = _tbEmbedArgs || [];
   g.async = true;
   g.src = u + "/widget.js";
   s.parentNode.insertBefore(g, s);
-})();
-
-</script>
+  })();
+  </script>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->
@@ -32,23 +30,20 @@ var _tbEmbedArgs = _tbEmbedArgs || [];
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
   <button onclick="showTbWidget()" >Открыть виджет</button>
-<script src="//cdn.polyfill.io/v2/polyfill.min.js?features=default,fetch,Promise"></script>
-<script src="//unpkg.com/@textback/notification-widget@latest/build/index.js"></script>
-<script> 
-function showTbWidget() { 
-    //clear from previous widget show-ups
-    $('body').find('tb-notification-widget').remove();
-    
-    $('body').append('<tb-notification-widget></tb-notification-widget>');
-    var widgetContainer = $('body').find('tb-notification-widget')[0];
-    var options = {
-        widgetId: '595eb649-45ee-d10c-2e46-016a90887ea3', // your widget ID
-        element: widgetContainer,
-    };
-    new TextBack.NotificationWidget(options)
-
-}; 
-
-</script> 
+  <script src="//cdn.polyfill.io/v2/polyfill.min.js?features=default,fetch,Promise"></script>
+  <script src="//unpkg.com/@textback/notification-widget@latest/build/index.js"></script>
+  <script> 
+  function showTbWidget() { 
+  //clear from previous widget show-ups
+  $('body').find('tb-notification-widget').remove();
+  $('body').append('<tb-notification-widget></tb-notification-widget>');
+  var widgetContainer = $('body').find('tb-notification-widget')[0];
+  var options = {
+  widgetId: '595eb649-45ee-d10c-2e46-016a90887ea3', // your widget ID
+  element: widgetContainer,
+  };
+  new TextBack.NotificationWidget(options)
+  }; 
+  </script> 
 </body>
 </html>
