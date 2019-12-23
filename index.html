@@ -31,8 +31,24 @@ var _tbEmbedArgs = _tbEmbedArgs || [];
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N24VGWM"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
-  <script src="//unpkg.com/@textback/notification-widget@latest/build/index.js"></script>
-  <tb-notification-widget  widget-id="b6771737-df3c-810f-aea1-016d3922e40c">
-  </tb-notification-widget>
+  <button onclick="showTbWidget()" >Открыть виджет</button>
+<script src="//cdn.polyfill.io/v2/polyfill.min.js?features=default,fetch,Promise"></script>
+<script src="//unpkg.com/@textback/notification-widget@latest/build/index.js"></script>
+<script> 
+function showTbWidget() { 
+    //clear from previous widget show-ups
+    $('body').find('tb-notification-widget').remove();
+    
+    $('body').append('<tb-notification-widget></tb-notification-widget>');
+    var widgetContainer = $('body').find('tb-notification-widget')[0];
+    var options = {
+        widgetId: '9c54d2d1-df03-432b-9a87-ffffffffffff', // your widget ID
+        element: widgetContainer,
+    };
+    new TextBack.NotificationWidget(options)
+
+}; 
+
+</script> 
 </body>
 </html>
