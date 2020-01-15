@@ -1,24 +1,48 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <script src="https://unpkg.com/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" encoding="utf-8">
+    var _tbEmbedArgs = _tbEmbedArgs || [];
+    (function () {
+    var u =  "https://widget.textback.io/widget";
+    _tbEmbedArgs.push(["widgetId", "2d0648e6-33b6-4c9e-a06c-b294fbdc0830"]);
+    _tbEmbedArgs.push(["baseUrl", u]);
+    var d = document, g = d.createElement("script"), s = d.getElementsByTagName("script")[0];
+    g.type = "text/javascript";
+    g.charset = "utf-8";
+    g.defer = true;
+    g.async = true;
+    g.src = u + "/widget.js";
+    s.parentNode.insertBefore(g, s);
+    })();
+    </script>
+    
+    <script type="text/javascript">
+    (function() {
+    var s, ss, widget_id;
+    widget_id = "111f82c9-e9ea-4530-bb02-4ad0207390a4";
+    s = document.createElement("script");
+    s.type = 'text/javascript';
+    s.async = true;
+    s.src = "https://app.insales24.ru/callback.js";
+    s.setAttribute('data-insales24-callback', "111f82c9-e9ea-4530-bb02-4ad0207390a4");
+    ss = document.getElementsByTagName("script")[0];
+    ss.parentNode.insertBefore(s, ss);
+    }).call(this);
+    </script>
+    
+    <script>
+function inSalesCallback() {
+ $('.js-insales24-open_callback').trigger('click')
+};
+</script>
+    
+    <style>
+.insales24-open_callback--open, .insales24-body--right .insales24-modal--init {
+display: none!important;
+}
+</style>
 </head>
 <body>
-<button onclick="showTbWidget()" >Открыть виджет</button>
-<script src="//cdn.polyfill.io/v2/polyfill.min.js?features=default,fetch,Promise"></script>
-<script src="//unpkg.com/@textback/notification-widget@latest/build/index.js"></script>
-<script> 
-function showTbWidget() { 
-    //clear from previous widget show-ups
-    $('body').find('tb-notification-widget').remove();
-    $('body').append('<tb-notification-widget></tb-notification-widget>');
-    var widgetContainer = $('body').find('tb-notification-widget')[0];
-    var options = {
-        widgetId: 'b753556e-3e12-ccf2-708a-016ad4a9dc9f', // your widget ID
-        element: widgetContainer,
-    };
-    new TextBack.NotificationWidget(options)
-}; 
-</script> 
 </body>
 </html>
