@@ -28,6 +28,20 @@
     if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
     })();
     </script>
+
+    <script>
+    function jivo_onLoadCallback() {
+     window.jivo_cstm_widget = document.createElement('div');
+     jivo_cstm_widget.setAttribute('id', 'jivo_custom_widget');
+     document.body.appendChild(jivo_cstm_widget);
+     };
+     function jivo_onOpen() {
+     document.getElementById('textback_widget').className = '';
+     };
+     function jivositeCallback () {
+     jivo_api.open();
+     };
+    </script>
     
     <script type="text/javascript" encoding="utf-8">
     var _tbEmbedArgs = _tbEmbedArgs || [];
