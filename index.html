@@ -2,75 +2,9 @@
 <html lang="ru">
 <head> 
 
-    <script type="text/javascript">
-    (function() {
-    var s, ss, widget_id;
-    widget_id = "c1803514-b9c8-47fd-a7ed-c7715d199de4";
-    s = document.createElement("script");
-    s.type = 'text/javascript';
-    s.async = true;
-    s.src = "https://app.insales24.ru/callback.js";
-    s.setAttribute('data-insales24-callback', "c1803514-b9c8-47fd-a7ed-c7715d199de4");
-    ss = document.getElementsByTagName("script")[0];
-    ss.parentNode.insertBefore(s, ss)
-    }).call(this);
-    </script>
-    
-    <script type="text/javascript">
-    (function() {
-    (function(){ var widget_id = 'bAF6CRuptu';var d=document;var w=window;function l(){
-    var s = document.createElement('script'); 
-    s.type = 'text/javascript'; 
-    s.async = true; 
-    s.src = '//code.jivosite.com/script/widget/'+widget_id+'?plugin=insales'; 
-    var ss = document.getElementsByTagName('script')[0]; 
-    ss.parentNode.insertBefore(s, ss);}
-    if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
-    })();
-    </script>
-
-    <script>
-    function jivo_onLoadCallback() {
-     window.jivo_cstm_widget = document.createElement('div');
-     jivo_cstm_widget.setAttribute('id', 'jivo_custom_widget');
-     document.body.appendChild(jivo_cstm_widget);
-     };
-     function jivo_onOpen() {
-     document.getElementById('textback_widget').className = '';
-     };
-     function jivositeCallback () {
-     jivo_api.open();
-     };
-    </script>
-    
-    <script type="text/javascript" encoding="utf-8">
-    var _tbEmbedArgs = _tbEmbedArgs || [];
-    (function () {
-    var u =  "https://widget.textback.io/widget";
-    _tbEmbedArgs.push(["widgetId", "2d0648e6-33b6-4c9e-a06c-b294fbdc0830"]);
-    _tbEmbedArgs.push(["baseUrl", u]);
-    var d = document, g = d.createElement("script"), s = d.getElementsByTagName("script")[0];
-    g.type = "text/javascript";
-    g.charset = "utf-8";
-    g.defer = true;
-    g.async = true;
-    g.src = u + "/widget.js";
-    s.parentNode.insertBefore(g, s);
-    })();
-    </script>
-
-    <script>
-    function inSalesCallback() {
-    document.querySelector('.js-insales24-open_callback').click();
-    };
-    </script>
-    
-
-    <style>
-    .insales24-open_callback--open, .insales24-body--right .insales24-modal--init {
-    display: none!important;
-    }
-    </style>
+    <script src="//unpkg.com/@textback/notification-widget@latest/build/index.js"></script>
+    <tb-notification-widget  widget-id="b753556e-3e12-ccf2-708a-016ad4a9dc9f">
+    </tb-notification-widget>
 
 </head>
 <body>
