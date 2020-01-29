@@ -9,10 +9,10 @@
     })(window,document,'script','dataLayer','GTM-N24VGWM');</script>
     <!-- End Google Tag Manager -->
     <button onclick="showTbWidget()" >Открыть виджет</button>
-<script src="//cdn.polyfill.io/v2/polyfill.min.js?features=default,fetch,Promise"></script>
-<script src="//unpkg.com/@textback/notification-widget@latest/build/index.js"></script>
-<script> 
-function showTbWidget() { 
+    <script src="//cdn.polyfill.io/v2/polyfill.min.js?features=default,fetch,Promise"></script>
+    <script src="//unpkg.com/@textback/notification-widget@latest/build/index.js"></script>
+    <script> 
+    function showTbWidget() { 
     //clear from previous widget show-ups
     $('body').find('tb-notification-widget').remove();
     $('body').append('<tb-notification-widget></tb-notification-widget>');
@@ -22,8 +22,9 @@ function showTbWidget() {
         element: widgetContainer,
     };
     new TextBack.NotificationWidget(options)
-}; 
-</script> 
+    }; 
+    </script> 
+    <script src="https://unpkg.com/jquery/dist/jquery.min.js"></script>
 </head>
 <body>
     <!-- Google Tag Manager (noscript) -->
