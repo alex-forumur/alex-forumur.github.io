@@ -18,6 +18,20 @@
     })();
     </script>
 
+    <script>
+    function jivo_onLoadCallback() {
+    window.jivo_cstm_widget = document.createElement('div');
+    jivo_cstm_widget.setAttribute('id', 'jivo_custom_widget');
+    document.body.appendChild(jivo_cstm_widget);
+    };
+    function jivo_onOpen() {
+    document.getElementById('textback_widget').className = '';
+    };
+    function jivositeCallback () {
+    jivo_api.open();
+    };
+    </script>
+
     <script type="text/javascript">
     (function() {
     (function() {
@@ -45,6 +59,7 @@
     display: none!important;
     }
     </style>
+    <script src="//code.jivosite.com/widget/BwMr9bRCAh" async></script>
 </head>
 <body>
 </body>
