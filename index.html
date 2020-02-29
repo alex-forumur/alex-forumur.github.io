@@ -78,5 +78,23 @@
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <script src="//unpkg.com/@textback/notification-widget@latest/build/index.js"></script>
+    <button onclick="showTbWidget()"></button>
+<script src="//cdn.polyfill.io/v2/polyfill.min.js?features=default,fetch,Promise"></script>
+<script src="//unpkg.com/@textback/notification-widget@latest/build/index.js"></script>
+<script> 
+function showTbWidget() { 
+    var widgetContainer = document.querySelector('tb-notification-widget');
+
+    if (widgetContainer) widgetContainer.remove();
+    
+    widgetContainer = document.createElement('tb-notification-widget');
+    document.body.append(widgetContainer);
+    var options = {
+        widgetId: '9c54d2d1-df03-432b-9a87-ffffffffffff', // your widget ID
+        element: widgetContainer,
+    };
+    new TextBack.NotificationWidget(options);
+}; 
+</script> 
 </body>
 </html>
