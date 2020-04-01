@@ -19,73 +19,7 @@
     })();
 
     </script>
-
-    <script>
-    function jivo_onLoadCallback() {
-    window.jivo_cstm_widget = document.createElement('div');
-    jivo_cstm_widget.setAttribute('id', 'jivo_custom_widget');
-    document.body.appendChild(jivo_cstm_widget);
-    };
-    function jivo_onOpen() {
-    document.getElementById('textback_widget').className = '';
-    };
-    function jivositeCallback () {
-    jivo_api.open();
-    };
-    </script>
-
-    <script type="text/javascript">
-    (function() {
-    (function() {
-    var s, ss, widget_id;
-    widget_id = "c1803514-b9c8-47fd-a7ed-c7715d199de4";
-    s = document.createElement("script");
-    s.type = 'text/javascript';
-    s.async = true;
-    s.src = "https://app.insales24.ru/callback.js";
-    s.setAttribute('data-insales24-callback', "c1803514-b9c8-47fd-a7ed-c7715d199de4");
-    ss = document.getElementsByTagName("script")[0];
-    ss.parentNode.insertBefore(s, ss);
-    }).call(this);
-    })();
-    </script>
-
-    <script>
-    function inSalesCallback() {
-    document.querySelector('.js-insales24-open_callback').click();
-    };
-    </script>
-
-    <style>
-    .insales24-open_callback--open, .insales24-body--right .insales24-modal--init {
-    display: none!important;
-    }
-    </style>
-    <script src="//code.jivosite.com/widget/BwMr9bRCAh" async></script>
 </head>
 <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N24VGWM"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-    <script src="//unpkg.com/@textback/notification-widget@latest/build/index.js"></script>
-    <button onclick="showTbWidget()">Ваша кнопка</button>
-<script src="//cdn.polyfill.io/v2/polyfill.min.js?features=default,fetch,Promise"></script>
-<script src="//unpkg.com/@textback/notification-widget@latest/build/index.js"></script>
-<script> 
-function showTbWidget() { 
-    var widgetContainer = document.querySelector('tb-notification-widget');
-
-    if (widgetContainer) widgetContainer.remove();
-    
-    widgetContainer = document.createElement('tb-notification-widget');
-    document.body.append(widgetContainer);
-    var options = {
-        widgetId: 'b753556e-3e12-ccf2-708a-016ad4a9dc9f', // your widget ID
-        element: widgetContainer,
-    };
-    new TextBack.NotificationWidget(options);
-}; 
-</script> 
 </body>
 </html>
