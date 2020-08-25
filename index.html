@@ -32,7 +32,7 @@
   document.body.appendChild(jivo_cstm_widget);
   };
   function jivo_onOpen() {
-  document.getElementById('textback_widget').className = '';
+  document.getElementById('textback_widget').classList.remove('expanded');
   };
   function jivositeCallback () {
   jivo_api.open();
