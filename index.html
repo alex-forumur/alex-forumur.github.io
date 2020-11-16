@@ -3,7 +3,28 @@
 
 <head>
   <link rel="stylesheet" href="style.css">
-  <script src="//code.jivosite.com/widget/BwMr9bRCAh" async></script>
+  <!-- <script src="//code.jivosite.com/widget/BwMr9bRCAh" async></script> -->
+  <style>
+    #chatra.chatra--side-right.chatra--style-round:not(.chatra--expanded) {
+    right: -100px !important;
+    }
+    #chatra.chatra--pos-right.chatra--style-round:not(.chatra--expanded) {
+    right: -100px !important;
+    }
+   </style>
+   
+  <script>
+    (function(d, w, c) {
+        w.ChatraID = 'HdHzqFQtGK8zeTdZ6';
+        var s = d.createElement('script');
+        w[c] = w[c] || function() {
+            (w[c].q = w[c].q || []).push(arguments);
+        };
+        s.async = true;
+        s.src = 'https://call.chatra.io/chatra.js';
+        if (d.head) d.head.appendChild(s);
+    })(document, window, 'Chatra');
+</script>
 
   <script type="text/javascript" encoding="utf-8">
     var _tbEmbedArgs = _tbEmbedArgs || [];
@@ -24,18 +45,10 @@
   </script>
 
   <script>
-    function jivo_onLoadCallback() {
-      window.jivo_cstm_widget = document.createElement('div');
-      jivo_cstm_widget.setAttribute('id', 'jivo_custom_widget');
-      document.body.appendChild(jivo_cstm_widget);
+    function chatraCallback () {
+    Chatra('openChat', true);
     };
-    function jivo_onOpen() {
-      document.getElementById('textback_widget').classList.remove('expanded');
-    };
-    function jivositeCallback() {
-      jivo_api.open();
-    };
-  </script>
+   </script>
 
 </head>
 
