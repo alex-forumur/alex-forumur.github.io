@@ -86,8 +86,26 @@
   <!-- Виджет подписки -->
   <script src="//unpkg.com/@textback/notification-widget@dev/build/index.js"></script>
   <tb-notification-widget api-path="https://tb-apisrv-dev.textback.io/api"
-    widget-id="708040e0-b749-d814-66a2-01714e6d08bd">
+    widget-id="708040e0-b749-d814-66a2-01714e6d08bd"
+    lang='fr'>
   </tb-notification-widget>
+
+  <script>
+    TextBack.NotificationWidget.locales.fr = {
+        facebook: "Facebook",
+        facebookExtended: "Abonnez-vous à Facebook",
+        telegram: "Telegram",
+        telegramExtended: "Abonnez-vous à Telegram",
+        viber: "Viber",
+        viberExtended: "Subscribe to Viber",
+        vkontakte: "VK",
+        vkontakteExtended: "Abonnez-vous à Viber",
+        whatsapp: "WhatsApp",
+        whatsappExtended: "Abonnez-vous à WhatsApp",
+        whatsappb: "WhatsApp",
+        whatsappbExtended: "Abonnez-vous à WhatsApp"
+    }
+</script>
 
   <!-- Roistat -->
   <script>
