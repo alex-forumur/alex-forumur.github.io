@@ -102,9 +102,18 @@
 
   <!-- Виджет подписки -->
   <script src="//unpkg.com/@textback/notification-widget@dev/build/index.js"></script>
-  <tb-notification-widget api-path="https://tb-apisrv-dev.textback.io/api"
-    widget-id="b23225e5-db1e-5f65-7fa9-0177c02bdc7d" lang="de" style="display: none;">
-  </tb-notification-widget>
+  <script>
+    const config = {
+      widgetId: 'b23225e5-db1e-5f65-7fa9-0177c02bdc7d'
+    };
+
+    TextBack.SDK.initWidget(config).then((test) => {
+      debugger;
+    });
+
+    
+  </script>
+
 
   <!--изменится перевод виджета подписок-->
   <!-- <script>TextBack.NotificationWidget.locales.fr.facebookExtended = "Abonnez-vous à Facebook"</script> -->
